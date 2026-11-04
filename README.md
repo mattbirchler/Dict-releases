@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/mattbirchler/Dict-releases/releases/latest"><b>Download for macOS</b></a>
+  <a href="https://github.com/mattbirchler/Dict-releases/releases/latest/download/Dict.dmg"><b>Download for macOS</b></a>
   &nbsp;&middot;&nbsp;
   <a href="https://github.com/mattbirchler/Dict-releases/releases">Release notes</a>
   &nbsp;&middot;&nbsp;
@@ -25,7 +25,7 @@
 
 Dict is a dictation app that lives in your menu bar. Hold the dictation key (Right Command, unless you pick another), say what you want to type, and let go. A moment later the text is sitting in whatever app you were in: a message, a document, a code editor, a search box.
 
-The speech recognition runs on your Mac, using either Apple's built-in engine or NVIDIA's Parakeet model. There is no account, no subscription and no usage limit. Try it free for 14 days, then [buy it once](https://store-production-8e91.up.railway.app/buy) and it's yours on all of your Macs.
+The speech recognition runs on your Mac, using either Apple's built-in engine or NVIDIA's Parakeet model. There is no account, no subscription and no usage limit. Try it free for 14 days, then [buy it once](https://dictapp.app/buy) and it's yours on all of your Macs.
 
 ## Why you might want it
 
@@ -45,7 +45,7 @@ The speech recognition runs on your Mac, using either Apple's built-in engine or
 
 ## Install
 
-1. [Download the latest disk image](https://github.com/mattbirchler/Dict-releases/releases/latest) (`Dict-<version>-<build>.dmg`).
+1. [Download the latest disk image](https://github.com/mattbirchler/Dict-releases/releases/latest/download/Dict.dmg).
 2. Open it and drag Dict to the Applications folder, then open Dict from there.
 3. Follow the short setup. Dict asks for Microphone access so it can hear you and Accessibility access so it can type for you, and explains each one as it goes. You get to try dictating before setup is over.
 
@@ -53,7 +53,7 @@ Dict needs **macOS 26 or later** on a Mac with **Apple silicon**. Updates arrive
 
 ## Buying Dict
 
-Every feature works for 14 days. After that, dictation stops until you enter a license key (your settings and history stay put). [Buy Dict](https://store-production-8e91.up.railway.app/buy) through Stripe, then click **Activate in Dict** on the confirmation page. The key works on all of your Macs and is checked on your Mac: Dict never contacts a server to confirm it.
+Every feature works for 14 days. After that, dictation stops until you enter a license key (your settings and history stay put). [Buy Dict](https://dictapp.app/buy) through Stripe, then click **Activate in Dict** on the confirmation page. The key works on all of your Macs and is checked on your Mac: Dict never contacts a server to confirm it.
 
 <p align="center">
   <img src="docs/readme/onboarding.png" width="600" alt="The setup step where you try dictating into a text box">
