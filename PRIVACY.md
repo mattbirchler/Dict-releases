@@ -33,6 +33,27 @@ Dict is built so that what you say never leaves your Mac.
    once a day, and when you choose Check for Updates. That request includes
    Dict's version and your macOS version, as every update check does, and
    nothing else. Sparkle's optional system-profile reporting is off.
+3. **Anonymous usage data.** Unless you turn it off, Dict sends usage
+   counts to PostHog (`us.i.posthog.com`), described below.
+
+## Anonymous usage data
+
+Dict sends a small set of events that show how much it gets used:
+when the app launches, when a dictation finishes (its word count, its
+length in seconds, the engine and the dictation style), when one fails
+and why, which onboarding steps are viewed, when the Parakeet model
+finishes downloading, when Buy is clicked, when a license is activated
+(by link or by pasting), and when the free trial ends.
+
+What is never sent: your audio, your words, your history, your word
+replacements, the text of the field you dictate into, and your license
+key or the email address in it. Dict tells PostHog not to store your IP
+address or look up your location, and doesn't create a profile for you.
+Each copy of Dict has a random ID so repeat launches can be counted
+together, and it isn't linked to who you are.
+
+Turn it off in Settings > General > Share anonymous usage data. Nothing is
+sent after that.
 
 ## Your license key
 
@@ -42,8 +63,7 @@ with and the purchase date. Dict checks the key on your Mac against a
 public key built into the app. It never sends the key anywhere or asks a
 server whether it's valid. The key is stored in Dict's preferences file.
 
-There are no accounts, no analytics, no crash reporting, and no other
-connections. The Apple speech engine runs on-device; on macOS 26 and later
+There are no accounts, no crash reporting, and no other connections. The Apple speech engine runs on-device; on macOS 26 and later
 it does not send audio to Apple.
 
 ## Removing everything
