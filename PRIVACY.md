@@ -1,6 +1,7 @@
 # Privacy
 
-Dict is built so that what you say never leaves your Mac.
+Dict is built so that what you say never leaves your Mac, unless you turn
+on cloud cleanup with your own OpenRouter key (described below).
 
 ## What stays on your Mac
 
@@ -9,7 +10,8 @@ Dict is built so that what you say never leaves your Mac.
   discarded when the text is inserted. Dict never writes audio to disk.
 - **Transcripts.** Produced by a speech model running on your Mac (Apple's
   built-in speech recognition, or the Parakeet model). Formatting uses the
-  on-device Apple Intelligence model when it's available.
+  on-device Apple Intelligence model when it's available, unless you've
+  turned on cloud cleanup.
 - **History.** Recent transcriptions are stored in a local database
   (`~/Library/Application Support/Dict/History.store`) so you can copy
   them again. You choose how many to keep (or none) in History.
@@ -18,8 +20,10 @@ Dict is built so that what you say never leaves your Mac.
   already in the focused field (through the Accessibility permission) and
   hands the on-device formatter the names and terms it finds there, so they
   are spelled the way your document spells them. The text is used for that
-  one dictation and never stored or sent anywhere. Turn this off in
-  Settings > General if you prefer.
+  one dictation and never stored. It's never sent anywhere either, except
+  that with cloud cleanup on, the names and terms Dict found go to
+  OpenRouter along with the transcript. Turn this off in Settings > General
+  if you prefer.
 
 ## The only network connections
 
@@ -35,6 +39,17 @@ Dict is built so that what you say never leaves your Mac.
    nothing else. Sparkle's optional system-profile reporting is off.
 3. **Anonymous usage data.** Unless you turn it off, Dict sends usage
    counts to PostHog (`us.i.posthog.com`), described below.
+4. **Cloud cleanup, only if you add a key.** This is off until you paste
+   your own OpenRouter API key into Settings > General > Cloud cleanup.
+   Then, for each dictation that gets formatted, Dict sends the transcript
+   text, the formatting instructions, and any names and terms read from the
+   field you're dictating into to `openrouter.ai`, which passes them to the
+   model you chose (Claude Haiku 5.5 by default). Your audio is never sent.
+   Dict also asks `openrouter.ai` for your key's total spend when you click
+   Check in Settings. The key is stored in your Mac's Keychain and sent only
+   to OpenRouter. What OpenRouter and the model provider do with requests
+   is covered by their own policies. Remove the key, or turn the toggle
+   off, and these requests stop.
 
 ## Anonymous usage data
 
@@ -45,7 +60,7 @@ and why, which onboarding steps are viewed, when the Parakeet model
 finishes downloading, when Buy is clicked, when a license is activated
 (by link or by pasting), and when the free trial ends.
 
-What is never sent: your audio, your words, your history, your word
+What is never sent to PostHog: your audio, your words, your history, your word
 replacements, the text of the field you dictate into, and your license
 key or the email address in it. Dict tells PostHog not to store your IP
 address or look up your location, and doesn't create a profile for you.
@@ -74,6 +89,8 @@ Quit Dict, then delete:
 - `~/Library/Application Support/FluidAudio` (the Parakeet model)
 - `~/Library/Preferences/birchtree.Dict-app.plist` (settings)
 - `~/Library/Application Support/Dict` (the history database and the trial start date)
+- the `birchtree.Dict-app.openrouter` item in Keychain Access, if you added
+  an OpenRouter key
 
 Dict's Microphone and Accessibility permissions can be removed in System
 Settings > Privacy & Security.
