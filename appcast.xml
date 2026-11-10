@@ -7,6 +7,23 @@
         <language>en</language>
         <item>
             <title>Dict 1.0</title>
+            <pubDate>Tue, 10 Nov 2026 00:18:33 GMT</pubDate>
+            <sparkle:version>14</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[
+<h3>Dict 1.0 (build 14)</h3>
+<p>Two fixes in this build.</p>
+<h3>A quiet last phrase no longer gets cut off</h3>
+<p>Build 12 taught Dict to keep listening after you let go of the dictation key. It could still miss the end of a sentence if you trailed off quietly while releasing the key, because Dict mistook the soft ending for silence and stopped right away. Dict now judges only what it hears after you let go, and waits for a real pause before it stops. If you&#x27;d already finished talking, you won&#x27;t notice a difference.</p>
+<h3>Color scheme tiles fit in Settings</h3>
+<p>The color scheme tiles in Settings could overlap each other. They&#x27;re sized to fit now.</p>
+            ]]></description>
+            <enclosure url="https://github.com/mattbirchler/Dict-releases/releases/download/v1.0-14/Dict-1.0-14.zip" type="application/octet-stream" sparkle:edSignature="7SRXGwA+0JtLiQ6NI+tZZI8NENg/2xQZxv6riJzRuBbSd7Gh+E8FkDCLclwR30ehbHIf2fq+PHdp2akZmMmNAg==" length="9422443"/>
+        </item>
+        <item>
+            <title>Dict 1.0</title>
             <pubDate>Sun, 08 Nov 2026 16:59:31 GMT</pubDate>
             <sparkle:version>13</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
