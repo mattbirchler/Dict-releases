@@ -7,6 +7,21 @@
         <language>en</language>
         <item>
             <title>Dict 1.0</title>
+            <pubDate>Fri, 13 Nov 2026 14:45:52 GMT</pubDate>
+            <sparkle:version>16</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[
+<h3>Dict 1.0 (build 16)</h3>
+<p>One fix in this build.</p>
+<h3>Cleanup can no longer cut off the end of what you said</h3>
+<p>When Dict tidies up a dictation (in coding apps, and in the Clean and Polished styles), a language model adds the punctuation. Dict already checked that the model hadn&#x27;t rewritten your text, but that check allowed a few missing words, and when a model drops words it usually drops the last ones. Dict now makes sure the cleaned text still ends the way you ended. If it doesn&#x27;t, Dict inserts what you said exactly as it was heard.</p>
+            ]]></description>
+            <enclosure url="https://github.com/mattbirchler/Dict-releases/releases/download/v1.0-16/Dict-1.0-16.zip" type="application/octet-stream" sparkle:edSignature="rP3ehyueUai2o6VWd6dP14kDEwv84MwblHoIoz6mu1EHNV3ovjxI+dSLf2ozqf8Az71nqW1oln4gqfBj1SH/DQ==" length="9426566"/>
+        </item>
+        <item>
+            <title>Dict 1.0</title>
             <pubDate>Wed, 11 Nov 2026 17:38:13 GMT</pubDate>
             <sparkle:version>15</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
