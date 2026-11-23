@@ -7,6 +7,27 @@
         <language>en</language>
         <item>
             <title>Dict 1.0</title>
+            <pubDate>Mon, 23 Nov 2026 14:43:53 GMT</pubDate>
+            <sparkle:version>17</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[
+<h3>Dict 1.0 (build 17)</h3>
+<p>Three fixes to what Dict types, all found by replaying real dictations.</p>
+<h3>No more words you didn&#x27;t say at the end</h3>
+<p>If you stopped talking partway through a thought, Dict sometimes finished the sentence for you. &quot;We haven&#x27;t touched it in a few&quot; could come out as &quot;We haven&#x27;t touched it in a few years.&quot; The speech model was guessing what came next once the audio ran out. Dict now types only what is in the recording.</p>
+<h3>Long dictations keep everything you said</h3>
+<p>Dictations longer than about 15 seconds could lose a stretch of speech, sometimes the last several seconds, or come out garbled in the middle (&quot;prin Prterinter&quot;). Long recordings are transcribed in overlapping pieces, and the joins between them were at fault. The joins are much more reliable now. In testing on a set of real dictations, the old version lost words in 3 of 49 runs and this one lost none. A doubled word at a join can still happen on rare occasions.</p>
+<h3>Cloud cleanup stays closer to your words</h3>
+<p>This one is for people using the experimental cloud cleanup with an OpenRouter key. In the Verbatim style, the cloud model sometimes reworded a sentence instead of only tidying it. Now:</p>
+<ul><li>It removes ums, uhs and stumbles (&quot;the the&quot;, &quot;I want to, I want to&quot;) and fixes capitals and punctuation. Nothing else.</li><li>Dict checks the result word for word. If the model added, swapped or dropped a real word, Dict throws that result away and types what you said with only the ums taken out.</li><li>A request you dictate for someone else (&quot;write me a summary of...&quot;) is cleaned up, never answered.</li></ul>
+<p>One change to know about: with cloud cleanup on, Verbatim now drops ums in coding apps, where it used to keep them.</p>
+            ]]></description>
+            <enclosure url="https://github.com/mattbirchler/Dict-releases/releases/download/v1.0-17/Dict-1.0-17.zip" type="application/octet-stream" sparkle:edSignature="1qYmlcTwVB3sSPdDDpWtEFu2+g2hG/3nsSUAwEFU+Rw7sWypmfk1K7FK45mdlBfGL+wcA14paL5OeK2VfO4mCg==" length="27591649"/>
+        </item>
+        <item>
+            <title>Dict 1.0</title>
             <pubDate>Fri, 13 Nov 2026 14:45:52 GMT</pubDate>
             <sparkle:version>16</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
