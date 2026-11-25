@@ -6,6 +6,23 @@
         <description>Updates for Dict</description>
         <language>en</language>
         <item>
+            <title>Dict 1.0.2</title>
+            <pubDate>Wed, 25 Nov 2026 21:34:19 GMT</pubDate>
+            <sparkle:version>19</sparkle:version>
+            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[
+<h3>Dict 1.0.2</h3>
+<h3>A more dependable hotkey</h3>
+<p>If macOS did not let Dict watch for the dictation key when the app opened, Dict never tried again. The key then did nothing until you quit and reopened the app.</p>
+<ul><li>Dict now keeps trying every few seconds until macOS lets it in, so the key starts working by itself.</li><li>If macOS switches Dict&#x27;s key watching off while the app is running, Dict switches it back on.</li><li>Turning Accessibility off and on again in System Settings now takes effect without restarting Dict.</li></ul>
+<h3>Better bug reports</h3>
+<p>Copy Diagnostic Log (in Settings) now includes what happened with the hotkey: which key is set, whether macOS is passing key presses to Dict, and why a press was turned down. If your key isn&#x27;t working, sending that log shows what is wrong. It never includes what you type or say.</p>
+            ]]></description>
+            <enclosure url="https://github.com/mattbirchler/Dict-releases/releases/download/v1.0.2-19/Dict-1.0.2-19.zip" type="application/octet-stream" sparkle:edSignature="zWUBgm8LBTl6/IlnUNo4uPnnq+SGaoy5Q8G95daScoodHj/iagL/zzV/hJ4GCO98QFM5mdoSP75JNsfPAfeABQ==" length="27643231"/>
+        </item>
+        <item>
             <title>Dict 1.0.1</title>
             <pubDate>Wed, 25 Nov 2026 01:00:46 GMT</pubDate>
             <sparkle:version>18</sparkle:version>
