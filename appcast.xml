@@ -6,6 +6,23 @@
         <description>Updates for Dict</description>
         <language>en</language>
         <item>
+            <title>Dict 1.0.1</title>
+            <pubDate>Wed, 25 Nov 2026 01:00:46 GMT</pubDate>
+            <sparkle:version>18</sparkle:version>
+            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[
+<h3>Dict 1.0.1</h3>
+<h3>Dictate in your own language with Apple&#x27;s engine</h3>
+<p>Apple&#x27;s speech engine used to listen only for English, so dictating in any other language came out as garbled English. There is now a Language picker in Settings, under Engine.</p>
+<ul><li>Choose from every language Apple supports on your Mac, including German, French, Spanish, Italian, Portuguese, Japanese, Korean, Chinese, Hindi and more.</li><li>A new language downloads once, the first time you pick it. It usually takes a few seconds.</li><li>New installs start in your Mac&#x27;s language. If you were already using Dict, it stays on English until you change it.</li><li>Parakeet works out the language on its own, as before, so it has no picker.</li></ul>
+<h3>Fewer lost words outside English</h3>
+<p>When Dict tidied up a dictation, it removed English filler sounds like &quot;um&quot; and &quot;er&quot; in every language. In German those are real words (&quot;er&quot; means &quot;he&quot;), so they were being dropped. Dict now removes them only from English dictations. Repeated words like &quot;the the&quot; are still cleaned up in every language.</p>
+            ]]></description>
+            <enclosure url="https://github.com/mattbirchler/Dict-releases/releases/download/v1.0.1-18/Dict-1.0.1-18.zip" type="application/octet-stream" sparkle:edSignature="RNGMwqLQm6dM2hYhBU7qr81f5p17iSHhLigVA5nHsiQRoe836bGZLondlQXjJtgqwGDMukk+gfAKxTt0I28gCg==" length="27631108"/>
+        </item>
+        <item>
             <title>Dict 1.0</title>
             <pubDate>Mon, 23 Nov 2026 14:43:53 GMT</pubDate>
             <sparkle:version>17</sparkle:version>
