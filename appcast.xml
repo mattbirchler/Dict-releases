@@ -6,6 +6,24 @@
         <description>Updates for Dict</description>
         <language>en</language>
         <item>
+            <title>Dict 1.0.3</title>
+            <pubDate>Fri, 27 Nov 2026 14:34:53 GMT</pubDate>
+            <sparkle:version>20</sparkle:version>
+            <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[
+<h3>Dict 1.0.3</h3>
+<h3>Ready for macOS 27.3</h3>
+<p>macOS 27.3 moves the permission Dict needs to a new place in System Settings, called System &amp; App Protection Override, and offers two choices there. One of them (Choose Apps) looks like it worked but leaves Dict unable to notice your key or paste your words.</p>
+<ul><li>Setup now names the right place in System Settings for the version of macOS you are on, and on 27.3 it lists the steps: add Dict, then choose Override System Protections.</li><li>If Dict ends up with the limited kind of access, setup now says so and explains how to fix it, instead of telling you everything is ready.</li><li>There is a Relaunch Dict button for when macOS needs Dict to restart before the permission takes effect.</li></ul>
+<p>Nothing changes on earlier versions of macOS.</p>
+<h3>A cloud cleanup switch that tells the truth</h3>
+<p>In Settings, &quot;Clean up with OpenRouter&quot; appeared switched on, and could not be switched off, for people who had never added an OpenRouter key. Nothing was ever sent anywhere without a key, so this was only the switch showing the wrong thing. It now shows off until you add a key.</p>
+            ]]></description>
+            <enclosure url="https://github.com/mattbirchler/Dict-releases/releases/download/v1.0.3-20/Dict-1.0.3-20.zip" type="application/octet-stream" sparkle:edSignature="Ru8tLj6Ew8L+nFwK1RATGg0f98G0Mi9Jq+TRuAHvsb0O9TovBdUrPC89WWIG6SzsJ1Z+pohGKf5901NqE7jCAQ==" length="27655557"/>
+        </item>
+        <item>
             <title>Dict 1.0.2</title>
             <pubDate>Wed, 25 Nov 2026 21:34:19 GMT</pubDate>
             <sparkle:version>19</sparkle:version>
